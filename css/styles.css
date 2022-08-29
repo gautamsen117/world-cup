@@ -56,6 +56,7 @@ body {
     /* column-gap: 24px; */
     column-gap: 10px;
     /* width: 1112px; */
+    margin-bottom: 130px;
 }
 .first-box {
     background-color: #161616;
@@ -132,4 +133,33 @@ body {
 .button-icon {
     display: flex;
     column-gap: 20px;
+}
+/* Second section end */
+/* Footer section start */
+.footer-detail {
+    /* width:px; */
+    background-color: #161616;
+    height: 350px;
+    text-align: center;
+    border: 2px solid gold;
+}
+.footer-info {
+    margin-top: 80px;
+}
+.footer-title {
+    font-weight: 700;
+    color: #FFFFFF;
+}
+hr {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 1112px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    color: #B9B9B9;
 }
