@@ -21,7 +21,7 @@ body {
 }
 .top-banner {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding: 30px;
 }
 .banner-info { 
@@ -196,3 +196,5 @@ hr {
     font-size: 20px;
     color: #161616;
 }
+
+

@@ -9,11 +9,154 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/e17c870602.js" crossorigin="anonymous"></script>
+    <style>
+        /* For mobile device */
+        @media screen and (max-width:688px) {
+            .container, .banner-info {
+                max-width: 688px;
+                width: 90%;
+                height: fit-content;
+                font-size: 1em;
+            }
+            .banner-title {
+                font-size: 2em;
+            }
+            .top-banner {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                row-gap: 50px;
+            }
+            .half-width img {
+                width: 233px;
+                height: 245px;
+            }
+            /* second secton start */
+            .second-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 50px;
+            }
+            .second-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 688px;
+                width: 90%;
+                font-size: 1em;
+                row-gap: 20px;
+            }
+            /* Footer section start */
+            .footer-detail {
+                max-width: 688px;
+                width: 90%;
+                height: fit-content;
+            }
+            .footer-items {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            hr {
+                width: 80%;
+                text-align: center;
+            }
+        }
+        /* For Tab device         */
+        @media screen and (min-width:689px) and (max-width:992px) {
+            .container, .banner-info {
+                max-width: 992px;
+                width: 90%;
+                height: fit-content;
+                font-size: 1em;
+            }
+            .banner-title {
+                font-size: 2em;
+            }
+            .top-banner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                row-gap: 20px;
+            }
+            .half-width img {
+                width: 323px;
+                height: 340px;
+            }
+            /* Second section start */
+            .second-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .first-box {
+                width: 80%;
+                background-color: #FFFFFF;
+                height: fit-content;
+            }
+            .aside-container {
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                column-gap: 20px;
+            }
+            .box-1, .box-2 {
+                background: #FFFFFF;
+                border: 1px solid #E8E8E8;
+                border-radius: 10px;
+            }
+            .box-3 {
+                background-color: red;
+            }
+            .second-box {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+                align-items: center;
+                max-width: 992px;
+                width: 90%;
+                font-size: 1em;
+                column-gap: 0;
+            }
+            .box {
+                width: 357px;
+                height: 414.21px;
+            }
+            #last-box {
+                display: none;
+            }
+            /* Footer section start */
+            .footer-detail {
+                max-width: 992px;
+                width: 90%;
+                height: fit-content;
+                font-size: 0.7em;
+            }
+            .footer-title {
+                font-size: 2em;
+            }
+            .footer-items {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            hr {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        
-    </header>
     <main>
         <!-- Top banner start -->
         <section class="banner">
@@ -39,7 +182,7 @@
             <div class="first-box">
                 <div class="aside-container">
                     <div class="box-1">
-                        <a class="link-button" href="##">Upcoming Match</a>
+                        <a class="link-button" target="_blank" href="home.html">Upcoming Match</a>
                     </div>
                     <div class="box-2">
                         <a class="link-button" href="##">All Group</a>
@@ -170,7 +313,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="box">
+                <article id="last-box" class="box">
                     <div class="blog-image">
                         <img src="assets/Blog Image.png" alt="">
                     </div>
@@ -191,7 +334,7 @@
         <!-- Footer Section start  -->
         <footer class="footer-detail">
             <div class="footer-info">
-                <h class="footer-title">Goal</h1>
+                <h1 class="footer-title">Goal</h1>
                     <hr>
                     <div class="footer-items">
                         <div class="item">
@@ -212,6 +355,17 @@
                         <div class="item">
                             <h3>Goal Live</h3>
                         </div>
+                    </div>
+                    <div class="social-icon">
+                        <span>
+                            <a target="_blank" href="https://www.linkedin.com/in/gautam-sen/"><i class="fa-brands fa-linkedin"></i></a>
+                        </span>
+                        <span>
+                            <a target="_blank" href="https://www.facebook.com/gautamsen117"><i class="fa-brands fa-facebook"></i></a>
+                        </span>
+                        <span>
+                            <a target="_blank" href="https://github.com/gautamsen117?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                        </span>
                     </div>
             </div>
         </footer>

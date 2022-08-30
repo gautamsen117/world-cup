@@ -18,11 +18,156 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/e17c870602.js" crossorigin="anonymous"></script>
+    <style>
+        @media screen and (max-width:688px) {
+            .container, .banner-info {
+                max-width: 688px;
+                width: 90%;
+                height: fit-content;
+                font-size: 1em;
+            }
+            .banner-title {
+                font-size: 2em;
+            }
+            .top-banner {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                row-gap: 20px;
+            }
+            .half-width img {
+                width: 233px;
+                height: 245px;
+            }
+            /* second section */
+            .second-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 50px;
+            }
+            .second-box {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                justify-content: center;
+                align-items: center;
+                max-width: 688px;
+                width: 90%;
+                font-size: 1em;
+            }
+            .box {
+                width: 335px;
+                height: 388.69px;
+            }
+            /* footer section  */
+            .footer-detail {
+                max-width: 688px;
+                width: 90%;
+                height: fit-content;
+            }
+            .footer-items {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            hr {
+                width: 80%;
+                text-align: center;
+            }
+        }
+        /* For tab device */
+        @media screen and (min-width:689px) and (max-width:992px) {
+            .container, .banner-info {
+                max-width: 992px;
+                width: 90%;
+                height: fit-content;
+                font-size: 1em;
+            }
+            .banner-title {
+                font-size: 2em;
+            }
+            .top-banner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                row-gap: 20px;
+            }
+            .half-width img {
+                width: 323px;
+                height: 340px;
+            }
+            /* second section  */
+            .second-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .first-box {
+                width: 80%;
+                background-color: #FFFFFF;
+                height: fit-content;
+            }
+            .aside-container {
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                column-gap: 20px;
+            }
+            .box-1, .box-2 {
+                background: #FFFFFF;
+                border: 1px solid #E8E8E8;
+                border-radius: 10px;
+            }
+            .box-3 {
+                background-color: red;
+            }
+            .second-box {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+                align-items: center;
+                max-width: 992px;
+                width: 90%;
+                font-size: 1em;
+                column-gap: 0;
+            }
+            .box {
+                width: 357px;
+                height: 414.21px;
+            }
+            #last-box {
+                visibility: hidden;
+            }
+            /* footer section  */
+            .footer-detail {
+                max-width: 992px;
+                width: 90%;
+                height: fit-content;
+                font-size: 0.7em;
+            }
+            .footer-title {
+                font-size: 2em;
+            }
+            .footer-items {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            hr {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        
-    </header>
     <main>
         <!-- Top banner start -->
         <section class="banner">
